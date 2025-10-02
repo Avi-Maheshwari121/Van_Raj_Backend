@@ -1,0 +1,25 @@
+{
+  "GRAM_PANCHAYAT": null,
+  "JANPAD_PANCHAYAT": null,
+  "TEHSIL": null,
+  "DISTRICT": null,
+  "SERIAL_NO": null,
+  "DATE": null,
+  "HOLDER_NAME": null,
+  "FATHER_NAME": null,
+  "CASTE": null,
+  "KHASRA_NO": null,
+  "TOTAL_AREA_SQFT": null,
+  "REVENUE_VILLAGE": null,
+  "SURVEY_NO": null,
+  "BOUNDARY_EAST": null,
+  "BOUNDARY_WEST": null,
+  "BOUNDARY_NORTH": null,
+  "BOUNDARY_SOUTH": null,
+  "_metadata": {
+    "image_path": "test2.png",
+    "extracted_text": "0 1 .",
+    "processing_successful": true,
+    "extracted_entities_count": 0
+  }
+}

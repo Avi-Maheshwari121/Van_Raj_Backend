@@ -1,0 +1,49 @@
+{
+  "model_config": {
+    "trained_model_path": "./trained_trocr_model",
+    "encoder_model": "google/vit-base-patch16-224-in21k",
+    "decoder_model": "surajp/RoBERTa-hindi-guj-san",
+    "fallback_model": "microsoft/trocr-base-handwritten"
+  },
+  "generation_config": {
+    "max_length": 512,
+    "num_beams": 4,
+    "early_stopping": true,
+    "no_repeat_ngram_size": 2,
+    "do_sample": true,
+    "temperature": 0.7
+  },
+  "entity_config": {
+    "entities": [
+      "GRAM_PANCHAYAT",
+      "JANPAD_PANCHAYAT", 
+      "TEHSIL",
+      "DISTRICT",
+      "SERIAL_NO",
+      "DATE",
+      "HOLDER_NAME",
+      "FATHER_NAME",
+      "KHASRA_NO",
+      "TOTAL_AREA_SQFT",
+      "BOUNDARY_EAST",
+      "BOUNDARY_WEST", 
+      "BOUNDARY_NORTH",
+      "BOUNDARY_SOUTH"
+    ],
+    "numeric_fields": ["SERIAL_NO", "KHASRA_NO", "TOTAL_AREA_SQFT"],
+    "name_fields": ["HOLDER_NAME", "FATHER_NAME"],
+    "boundary_fields": ["BOUNDARY_EAST", "BOUNDARY_WEST", "BOUNDARY_NORTH", "BOUNDARY_SOUTH"]
+  },
+  "processing_config": {
+    "image_formats": [".png", ".jpg", ".jpeg", ".tiff", ".bmp"],
+    "output_format": "json",
+    "enable_logging": true,
+    "log_level": "INFO"
+  },
+  "validation_config": {
+    "enable_post_processing": true,
+    "enable_digit_cleaning": true,
+    "enable_date_formatting": true,
+    "enable_name_normalization": true
+  }
+}
